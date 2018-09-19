@@ -7,7 +7,7 @@ def index(request):
     """Exibe a pagina principal da aplicação."""
     context= {
         'hide_new_button': True,
-        'priorities':Event.priorities_list,
-        'today':localdate(),
+        'priorities': Event.priorities_list,
+        'today': localdate(),
     }
-    return render(request, 'index', context)
+    return render(request, 'index.html', context)
