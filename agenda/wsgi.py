@@ -1,5 +1,5 @@
 """
-WSGI config for agenda project.
+WSGI config for Agenda project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
