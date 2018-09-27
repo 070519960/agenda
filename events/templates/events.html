@@ -19,7 +19,7 @@
                 <tbody>
             {% for event in events %}
                 <tr class="{% if event.priority == '1' %} table-success{% elif event.priority == '2' %} table-warning{% elif event.priority == '3' %} table-danger{% else %} table-default{% endif %}">
-                    <td><a class="text-dark" href="{% url 'agenda-events-day' event.date.year event.date.month event.date.day %}">
+                    <td><a class="text-dark" href="{% url 'agenda-events-all'  %}">
                         {{ event.date|date:"d/m/Y" }}</a></td>
                     <td class="text-truncate">
                         <a class="text-dark" href="{% url 'agenda-events-show' event.id %}">{{ event.event }}</a>
@@ -44,3 +44,6 @@
 {% include "footer.html" %}
     </body>
 </html>
+<!--
+    vim: tabstop=8 expandtab shiftwidth=4 softtabstop=4
+-->
